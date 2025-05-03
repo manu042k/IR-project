@@ -27,7 +27,7 @@ if not subreddit_names:
 posts_list, count = get_posts(root_url, reddit_read_only, subreddit_names)
 
 # Save the posts to a CSV file
-save_posts(posts_list, option="csv")
+save_posts(posts_list, option="json")
 
 	
 
