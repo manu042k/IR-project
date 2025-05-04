@@ -34,7 +34,7 @@ https://www.reddit.com/r/BBL/
 https://www.reddit.com/r/CPL/
 https://www.reddit.com/r/PSL/
 https://www.reddit.com/r/CricketBuddies/
-https://www.reddit.com/r/WomensCricket/ 
+https://www.reddit.com/r/WomensCricket/
 #Tennis
 https://www.reddit.com/r/tennis/
 https://www.reddit.com/r/10s/
@@ -499,83 +499,83 @@ https://www.reddit.com/r/WBAfootball
 # West Ham
 https://www.reddit.com/r/Hammers
 # Brandon Wheat Kings
-http://www.reddit.com/r/wheatkings
+https://www.reddit.com/r/wheatkings
 # Edmonton Oil Kings
-http://www.reddit.com/r/oilkings
+https://www.reddit.com/r/oilkings
 # Halifax Mooseheads
 https://www.reddit.com/r/HalifaxMooseheads
 # Portland Winterhawks
-http://www.reddit.com/r/winterhawks
+https://www.reddit.com/r/winterhawks
 # Seattle Thunderbirds
-http://www.reddit.com/r/tbirds
+https://www.reddit.com/r/tbirds
 # Victoria Royals
-http://www.reddit.com/r/victoriaroyals
+https://www.reddit.com/r/victoriaroyals
 # Anaheim Ducks
-http://www.reddit.com/r/anaheimducks
+https://www.reddit.com/r/anaheimducks
 # Arizona Coyotes
-http://www.reddit.com/r/coyotes
+https://www.reddit.com/r/coyotes
 # Boston Bruins
-http://www.reddit.com/r/bostonbruins
+https://www.reddit.com/r/bostonbruins
 # Buffalo Sabres
-http://www.reddit.com/r/sabres
+https://www.reddit.com/r/sabres
 # Calgary Flames
-http://www.reddit.com/r/calgaryflames
+https://www.reddit.com/r/calgaryflames
 # Carolina Hurricanes
-http://www.reddit.com/r/canes
+https://www.reddit.com/r/canes
 # Chicago Blackhawks
-http://www.reddit.com/r/hawks
+https://www.reddit.com/r/hawks
 # Colorado Avalanche
-http://www.reddit.com/r/coloradoavalanche
+https://www.reddit.com/r/coloradoavalanche
 # Columbus Blue Jackets
-http://www.reddit.com/r/bluejackets
+https://www.reddit.com/r/bluejackets
 # Dallas Stars
-http://www.reddit.com/r/dallasstars
+https://www.reddit.com/r/dallasstars
 # Detroi Red Wings
-http://www.reddit.com/r/detroitredwings
+https://www.reddit.com/r/detroitredwings
 # Edmonton Oilers
-http://www.reddit.com/r/edmontonoilers
+https://www.reddit.com/r/edmontonoilers
 # Florida Panthers
-http://www.reddit.com/r/floridapanthers
+https://www.reddit.com/r/floridapanthers
 # Los Angeles Kings
-http://www.reddit.com/r/losangeleskings
+https://www.reddit.com/r/losangeleskings
 # Minnesota Wild
-http://www.reddit.com/r/wildhockey
+https://www.reddit.com/r/wildhockey
 # Montreal Canadiens
-http://www.reddit.com/r/habs
+https://www.reddit.com/r/habs
 # Nashville Predators
-http://www.reddit.com/r/predators
+https://www.reddit.com/r/predators
 # New Jersey Devils
-http://www.reddit.com/r/devils
+https://www.reddit.com/r/devils
 # New York Islanders
-http://www.reddit.com/r/newyorkislanders
+https://www.reddit.com/r/newyorkislanders
 # New York Rangers
-http://www.reddit.com/r/rangers
+https://www.reddit.com/r/rangers
 # Ottawa Senators
-http://www.reddit.com/r/ottawasenators
+https://www.reddit.com/r/ottawasenators
 # Philidelphia Flyers
-http://www.reddit.com/r/flyers
+https://www.reddit.com/r/flyers
 # Pittsburgh Penguins
-http://www.reddit.com/r/penguins
+https://www.reddit.com/r/penguins
 # San Jose Sharks
-http://www.reddit.com/r/sanjosesharks
+https://www.reddit.com/r/sanjosesharks
 # St. Louis Blues
-http://www.reddit.com/r/stlouisblues
+https://www.reddit.com/r/stlouisblues
 # Tampa Bay Lightning
-http://www.reddit.com/r/tampabaylightning
+https://www.reddit.com/r/tampabaylightning
 # Toronto Maple Leafs
-http://www.reddit.com/r/leafs
+https://www.reddit.com/r/leafs
 # Vancouver Canucks
-http://www.reddit.com/r/canucks
+https://www.reddit.com/r/canucks
 # Washington Capitals
-http://www.reddit.com/r/caps
+https://www.reddit.com/r/caps
 # Winnepeg Jets
-http://www.reddit.com/r/winnipegjets
+https://www.reddit.com/r/winnipegjets
 # Golf Cirle Jerk
-http://www.reddit.com/r/golfcirclejerk
+https://www.reddit.com/r/golfcirclejerk
 # Golf
 https://www.reddit.com/r/golf
 # Pro Golf
-http://www.reddit.com/r/ProGolf
+https://www.reddit.com/r/ProGolf
 # Putt Putt Golf
 https://www.reddit.com/r/golf
 # ARCA Racing
@@ -643,10 +643,342 @@ https://www.reddit.com/r/wrugby
 # Tennis
 https://www.reddit.com/r/tennis
 # Cross Country
-http://www.reddit.com/r/CrossCountry/
+https://www.reddit.com/r/CrossCountry/
 # Pole Vaulting
-http://www.reddit.com/r/polevaulting/
+https://www.reddit.com/r/polevaulting/
 # Running
 https://www.reddit.com/r/running
 # Track and Field
 https://www.reddit.com/r/trackandfield/
+# Swimming
+https://www.reddit.com/r/Swimming/
+https://www.reddit.com/r/CompetitiveSwimming/
+# Cycling
+https://www.reddit.com/r/cycling/
+https://www.reddit.com/r/bicycling/
+https://www.reddit.com/r/MTB/
+https://www.reddit.com/r/peloton/
+# Winter Sports
+https://www.reddit.com/r/skiing/
+https://www.reddit.com/r/snowboarding/
+https://www.reddit.com/r/FigureSkating/
+https://www.reddit.com/r/hockey/
+# Combat Sports
+https://www.reddit.com/r/ufc/
+https://www.reddit.com/r/bjj/
+https://www.reddit.com/r/karate/
+https://www.reddit.com/r/taekwondo/
+# Esports
+https://www.reddit.com/r/esports/
+https://www.reddit.com/r/GlobalOffensive/
+https://www.reddit.com/r/leagueoflegends/
+https://www.reddit.com/r/DotA2/
+https://www.reddit.com/r/CompetitiveOverwatch/
+# Fantasy Sports
+https://www.reddit.com/r/fantasyfootball/
+https://www.reddit.com/r/fantasybaseball/
+https://www.reddit.com/r/fantasybball/
+https://www.reddit.com/r/fantasyhockey/
+# Sports Betting
+https://www.reddit.com/r/sportsbook/
+https://www.reddit.com/r/sportsbetting/
+# Extreme Sports
+https://www.reddit.com/r/skateboarding/
+https://www.reddit.com/r/surfing/
+https://www.reddit.com/r/climbing/
+https://www.reddit.com/r/parkour/
+# Bodybuilding & Strength Sports
+https://www.reddit.com/r/bodybuilding/
+https://www.reddit.com/r/weightlifting/
+https://www.reddit.com/r/powerlifting/
+https://www.reddit.com/r/strongman/
+# Water Sports
+https://www.reddit.com/r/sailing/
+https://www.reddit.com/r/kayaking/
+https://www.reddit.com/r/rowing/
+# Equestrian Sports
+https://www.reddit.com/r/Equestrian/
+https://www.reddit.com/r/Horses/
+# Recreational Sports
+https://www.reddit.com/r/Bowling/
+https://www.reddit.com/r/billiards/
+https://www.reddit.com/r/darts/
+# Traditional Sports
+https://www.reddit.com/r/Archery/
+https://www.reddit.com/r/fencing/ 
+# Random Sports related subreddits
+https://www.reddit.com/r/smashbros/
+https://www.reddit.com/r/Smite/
+https://www.reddit.com/r/Sneakers/
+https://www.reddit.com/r/Sneks/
+https://www.reddit.com/r/snowboarding/
+https://www.reddit.com/r/soccer/
+https://www.reddit.com/r/soccerstreams/
+https://www.reddit.com/r/space/
+https://www.reddit.com/r/spacex/
+https://www.reddit.com/r/speedrun/
+https://www.reddit.com/r/spop/
+https://www.reddit.com/r/sports/
+https://www.reddit.com/r/sportsarefun/
+https://www.reddit.com/r/spotify/
+https://www.reddit.com/r/SquaredCircle/
+https://www.reddit.com/r/starbound/
+https://www.reddit.com/r/starcitizen/
+https://www.reddit.com/r/starcraft/
+https://www.reddit.com/r/StardewValley/
+https://www.reddit.com/r/starterpacks/
+https://www.reddit.com/r/StartledCats/
+https://www.reddit.com/r/startrek/
+https://www.reddit.com/r/startups/
+https://www.reddit.com/r/StarWars/
+https://www.reddit.com/r/StarWarsBattlefront/
+https://www.reddit.com/r/Steam/
+https://www.reddit.com/r/steamdeals/
+https://www.reddit.com/r/stevenuniverse/
+https://www.reddit.com/r/stocks/
+https://www.reddit.com/r/stopdrinking/
+https://www.reddit.com/r/StoppedWorking/
+https://www.reddit.com/r/subaru/
+https://www.reddit.com/r/Survival/
+https://www.reddit.com/r/SweatyPalms/
+https://www.reddit.com/r/swoleacceptance/
+https://www.reddit.com/r/swtor/
+https://www.reddit.com/r/tall/
+https://www.reddit.com/r/tattoos/
+https://www.reddit.com/r/thalassophobia/
+https://www.reddit.com/r/TheDepthsBelow/
+https://www.reddit.com/r/thegrandtour/
+https://www.reddit.com/r/theocho/
+https://www.reddit.com/r/titanfall/
+https://www.reddit.com/r/TopGear/
+https://www.reddit.com/r/totalwar/
+https://www.reddit.com/r/travel/
+https://www.reddit.com/r/truegaming/
+https://www.reddit.com/r/Twitch/
+https://www.reddit.com/r/ufc/
+https://www.reddit.com/r/Unity3D/
+https://www.reddit.com/r/urbanexploration/
+https://www.reddit.com/r/Vive/
+https://www.reddit.com/r/VolleyballGirls/
+https://www.reddit.com/r/wallstreetbets/
+https://www.reddit.com/r/Warframe/
+https://www.reddit.com/r/Watches/
+https://www.reddit.com/r/weightroom/
+https://www.reddit.com/r/Whatcouldgowrong/
+https://www.reddit.com/r/wiiu/
+https://www.reddit.com/r/woahdude/
+https://www.reddit.com/r/worldcup/
+https://www.reddit.com/r/WouldYouRather/
+https://www.reddit.com/r/wow/
+https://www.reddit.com/r/xxfitness/
+https://www.reddit.com/r/yoga/
+https://www.reddit.com/r/Yogscast/
+https://www.reddit.com/r/100yearsago/
+https://www.reddit.com/r/1200isplenty/
+https://www.reddit.com/r/2007scape/
+https://www.reddit.com/r/2meirl4meirl/
+https://www.reddit.com/r/3amjokes/
+https://www.reddit.com/r/3Dprinting/
+https://www.reddit.com/r/3DS/
+https://www.reddit.com/r/4chan/
+https://www.reddit.com/r/ABraThatFits/
+https://www.reddit.com/r/AccidentalComedy/
+https://www.reddit.com/r/AccidentalRenaissance/
+https://www.reddit.com/r/ActLikeYouBelong/
+https://www.reddit.com/r/ADHD/
+https://www.reddit.com/r/adventuretime/
+https://www.reddit.com/r/Advice/
+https://www.reddit.com/r/AdviceAnimals/
+https://www.reddit.com/r/AlienBlue/
+https://www.reddit.com/r/Allsvenskan/
+https://www.reddit.com/r/alternativeart/
+https://www.reddit.com/r/AMA/
+https://www.reddit.com/r/AmazonTopRated/
+https://www.reddit.com/r/AmericanHorrorStory/
+https://www.reddit.com/r/amiugly/
+https://www.reddit.com/r/Anarchism/
+https://www.reddit.com/r/Android/
+https://www.reddit.com/r/androidapps/
+https://www.reddit.com/r/androiddev/
+https://www.reddit.com/r/AndroidGaming/
+https://www.reddit.com/r/androidthemes/
+https://www.reddit.com/r/AnimalCrossing/
+https://www.reddit.com/r/AnimalsBeingBros/
+https://www.reddit.com/r/AnimalsBeingDerps/
+https://www.reddit.com/r/AnimalsBeingJerks/
+https://www.reddit.com/r/AnimalTextGifs/
+https://www.reddit.com/r/anime/
+https://www.reddit.com/r/anime_irl/
+https://www.reddit.com/r/announcements/
+https://www.reddit.com/r/ANormalDayInRussia/
+https://www.reddit.com/r/answers/
+https://www.reddit.com/r/AntiJokes/
+https://www.reddit.com/r/Anxiety/
+https://www.reddit.com/r/apocalympics2016/
+https://www.reddit.com/r/AppHookup/
+https://www.reddit.com/r/apple/
+https://www.reddit.com/r/Aquariums/
+https://www.reddit.com/r/ArcherFX/
+https://www.reddit.com/r/architecture/
+https://www.reddit.com/r/arduino/
+https://www.reddit.com/r/arresteddevelopment/
+https://www.reddit.com/r/arrow/
+https://www.reddit.com/r/Art/
+https://www.reddit.com/r/AsianBeauty/
+https://www.reddit.com/r/business/
+https://www.reddit.com/r/BuyItForLife/
+https://www.reddit.com/r/C25K/
+https://www.reddit.com/r/calvinandhobbes/
+https://www.reddit.com/r/camping/
+https://www.reddit.com/r/CampingandHiking/
+https://www.reddit.com/r/canada/
+https://www.reddit.com/r/cars/
+https://www.reddit.com/r/CasualConversation/
+https://www.reddit.com/r/casualiama/
+https://www.reddit.com/r/CatastrophicFailure/
+https://www.reddit.com/r/catpictures/
+https://www.reddit.com/r/catpranks/
+https://www.reddit.com/r/cats/
+https://www.reddit.com/r/CatsStandingUp/
+https://www.reddit.com/r/Celebs/
+https://www.reddit.com/r/CFB/
+https://www.reddit.com/r/CGPGrey/
+https://www.reddit.com/r/changemyview/
+https://www.reddit.com/r/Cheap_Meals/
+https://www.reddit.com/r/chemicalreactiongifs/
+https://www.reddit.com/r/chemistry/
+https://www.reddit.com/r/chess/
+https://www.reddit.com/r/chicago/
+https://www.reddit.com/r/childfree/
+https://www.reddit.com/r/ChildrenFallingOver/
+https://www.reddit.com/r/Christianity/
+https://www.reddit.com/r/Chromecast/
+https://www.reddit.com/r/churning/
+https://www.reddit.com/r/Cinemagraphs/
+https://www.reddit.com/r/circlejerk/
+https://www.reddit.com/r/CitiesSkylines/
+https://www.reddit.com/r/civ/
+https://www.reddit.com/r/Depression_Help/
+https://www.reddit.com/r/DepthHub/
+https://www.reddit.com/r/Design/
+https://www.reddit.com/r/DesirePath/
+https://www.reddit.com/r/DestinyTheGame/
+https://www.reddit.com/r/Diablo/
+https://www.reddit.com/r/diablo3/
+https://www.reddit.com/r/DiWHY/
+https://www.reddit.com/r/DIY/
+https://www.reddit.com/r/DnD/
+https://www.reddit.com/r/doctorwho/
+https://www.reddit.com/r/Documentaries/
+https://www.reddit.com/r/DoesAnybodyElse/
+https://www.reddit.com/r/dogecoin/
+https://www.reddit.com/r/dogpictures/
+https://www.reddit.com/r/dogs/
+https://www.reddit.com/r/Dogtraining/
+https://www.reddit.com/r/DotA2/
+https://www.reddit.com/r/dragonage/
+https://www.reddit.com/r/drawing/
+https://www.reddit.com/r/Drugs/
+https://www.reddit.com/r/drunk/
+https://www.reddit.com/r/DrunkOrAKid/
+https://www.reddit.com/r/dubstep/
+https://www.reddit.com/r/DunderMifflin/
+https://www.reddit.com/r/dwarffortress/
+https://www.reddit.com/r/EatCheapAndHealthy/
+https://www.reddit.com/r/EmmaWatson/
+https://www.reddit.com/r/EmpireDidNothingWrong/
+https://www.reddit.com/r/energy/
+https://www.reddit.com/r/engineering/
+https://www.reddit.com/r/EngineeringStudents/
+https://www.reddit.com/r/Enhancement/
+https://www.reddit.com/r/EnoughTrumpSpam/
+https://www.reddit.com/r/entertainment/
+https://www.reddit.com/r/Entrepreneur/
+https://www.reddit.com/r/environment/
+https://www.reddit.com/r/eu4/
+https://www.reddit.com/r/europe/
+https://www.reddit.com/r/Eve/
+https://www.reddit.com/r/everymanshouldknow/
+https://www.reddit.com/r/EverythingScience/
+https://www.reddit.com/r/evilbuildings/
+https://www.reddit.com/r/excel/
+https://www.reddit.com/r/ExpectationVsReality/
+https://www.reddit.com/r/explainlikeIAmA/
+https://www.reddit.com/r/ExplainLikeImCalvin/
+https://www.reddit.com/r/explainlikeimfive/
+https://www.reddit.com/r/Eyebleach/
+https://www.reddit.com/r/forhire/
+https://www.reddit.com/r/formula1/
+https://www.reddit.com/r/forwardsfromgrandma/
+https://www.reddit.com/r/france/
+https://www.reddit.com/r/freebies/
+https://www.reddit.com/r/FreeEBOOKS/
+https://www.reddit.com/r/FreeGamesOnSteam/
+https://www.reddit.com/r/friendsafari/
+https://www.reddit.com/r/Frisson/
+https://www.reddit.com/r/Frugal/
+https://www.reddit.com/r/frugalmalefashion/
+https://www.reddit.com/r/Fullmoviesonvimeo/
+https://www.reddit.com/r/fullmoviesonyoutube/
+https://www.reddit.com/r/funhaus/
+https://www.reddit.com/r/funny/
+https://www.reddit.com/r/futbol/
+https://www.reddit.com/r/futurama/
+https://www.reddit.com/r/futurebeats/
+https://www.reddit.com/r/Futurology/
+https://www.reddit.com/r/gadgets/
+https://www.reddit.com/r/GamePhysics/
+https://www.reddit.com/r/gamernews/
+https://www.reddit.com/r/Games/
+https://www.reddit.com/r/gaming/
+https://www.reddit.com/r/gardening/
+https://www.reddit.com/r/geek/
+https://www.reddit.com/r/gentlemanboners/
+https://www.reddit.com/r/getdisciplined/
+https://www.reddit.com/r/GetMotivated/
+https://www.reddit.com/r/gif/
+https://www.reddit.com/r/GifRecipes/
+https://www.reddit.com/r/gifs/
+https://www.reddit.com/r/GifSound/
+https://www.reddit.com/r/glitch_art/
+https://www.reddit.com/r/Glitch_in_the_Matrix/
+https://www.reddit.com/r/GlobalOffensive/
+https://www.reddit.com/r/GlobalOffensiveTrade/
+https://www.reddit.com/r/golf/
+https://www.reddit.com/r/GoneMild/
+https://www.reddit.com/r/google/
+https://www.reddit.com/r/Graffiti/
+https://www.reddit.com/r/GrandTheftAutoV/
+https://www.reddit.com/r/graphic_design/
+https://www.reddit.com/r/GreenDawn/
+https://www.reddit.com/r/greentext/
+https://www.reddit.com/r/grilledcheese/
+https://www.reddit.com/r/gtaonline/
+https://www.reddit.com/r/GTAV/
+https://www.reddit.com/r/Guildwars2/
+https://www.reddit.com/r/Guitar/
+https://www.reddit.com/r/guitarlessons/
+https://www.reddit.com/r/Gunners/
+https://www.reddit.com/r/guns/
+https://www.reddit.com/r/holdmyjuicebox/
+https://www.reddit.com/r/Homebrewing/
+https://www.reddit.com/r/HomeImprovement/
+https://www.reddit.com/r/homelab/
+https://www.reddit.com/r/homestead/
+https://www.reddit.com/r/horror/
+https://www.reddit.com/r/HouseOfCards/
+https://www.reddit.com/r/howto/
+https://www.reddit.com/r/HowToHack/
+https://www.reddit.com/r/howtonotgiveafuck/
+https://www.reddit.com/r/HumansBeingBros/
+https://www.reddit.com/r/humor/
+https://www.reddit.com/r/jailbreak/
+https://www.reddit.com/r/japan/
+https://www.reddit.com/r/JapaneseGameShows/
+https://www.reddit.com/r/java/
+https://www.reddit.com/r/javascript/
+https://www.reddit.com/r/Jazz/
+https://www.reddit.com/r/jesuschristreddit/
+https://www.reddit.com/r/jobs/
+https://www.reddit.com/r/JoeRogan/
+https://www.reddit.com/r/Jokes/
