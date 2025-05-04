@@ -28,6 +28,7 @@ def main():
     root_url = os.getenv("ROOT_URL", "https://www.reddit.com")
     seed_file_path = os.getenv("SEED_FILE", "seed.txt")
     output_format = os.getenv("OUTPUT_FORMAT", "json")
+    max_workers = int(os.getenv("MAX_WORKERS", "5"))  # Default to 5 worker threads
     
     # Initialize Reddit client
     reddit_client = initialize_reddit()
@@ -39,9 +40,10 @@ def main():
         return 1
         
     print(f"Found {sum(len(subs) for subs in subreddit_categories.values())} subreddits in {len(subreddit_categories)} categories")
+    print(f"Using {max_workers} worker threads for parallel processing")
     
-    # Extract posts from subreddits
-    posts_data, post_count = get_posts(root_url, reddit_client, subreddit_categories)
+    # Extract posts from subreddits using multithreading
+    posts_data, post_count = get_posts(root_url, reddit_client, subreddit_categories, max_workers=max_workers)
     print(f"Successfully scraped {post_count} posts from Reddit")
     
     # Save the posts data

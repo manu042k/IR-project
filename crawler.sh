@@ -41,7 +41,7 @@ fi
 # Run the main Python script if it exists
 if [ -f "main.py" ]; then
     echo "Running main.py..."
-    python main.py
+    MAX_WORKERS=8 python main.py
 else
     echo "main.py not found."
 fi
