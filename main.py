@@ -1,34 +1,59 @@
+#!/usr/bin/env python3
+"""
+Reddit Post Crawler
+
+This script crawls Reddit for posts from specified subreddits defined in a seed file,
+processes them, and saves the collected data in JSON format.
+"""
+
+import os
 import dotenv
 import pandas as pd
-import os
 from urllib.parse import urlparse
-from crawler.init_crawler import initalize_reddit
+
+from crawler.init_crawler import initialize_reddit
 from utils.read_seed import read_seed_file
 from crawler.extract_posts import get_posts
 from utils.save_posts import save_posts
 
-# Load environment variables from .env file
-dotenv.load_dotenv()
 
-# import the root url from the environment variable
-root_url = os.getenv("ROOT_URL")
-reddit_read_only = initalize_reddit()
+def main():
+    """
+    Main function to orchestrate the Reddit post crawling process.
+    """
+    # Load environment variables
+    dotenv.load_dotenv()
+    
+    # Get configuration
+    root_url = os.getenv("ROOT_URL", "https://www.reddit.com")
+    seed_file_path = os.getenv("SEED_FILE", "seed.txt")
+    output_format = os.getenv("OUTPUT_FORMAT", "json")
+    
+    # Initialize Reddit client
+    reddit_client = initialize_reddit()
+    
+    # Read subreddit categories and names from seed file
+    subreddit_categories = read_seed_file(seed_file_path)
+    if not subreddit_categories:
+        print("Error: No subreddits found in the seed file. Exiting.")
+        return 1
+        
+    print(f"Found {sum(len(subs) for subs in subreddit_categories.values())} subreddits in {len(subreddit_categories)} categories")
+    
+    # Extract posts from subreddits
+    posts_data, post_count = get_posts(root_url, reddit_client, subreddit_categories)
+    print(f"Successfully scraped {post_count} posts from Reddit")
+    
+    # Save the posts data
+    output_path = save_posts(posts_data, option=output_format)
+    print(f"Data saved to {output_path}")
+    
+    return 0
 
-# From seed file, read urls and extract the subreddit names
-# Define the path to the seed file
-seed_file_path = 'seed.txt' # Assuming the file is in the same directory
 
-subreddit_names = read_seed_file(seed_file_path)
+if __name__ == "__main__":
+    exit(main())
 
-if not subreddit_names:
-	print("No subreddits found or extracted. Exiting.")
-	exit() # Or handle this case as needed
 
-posts_list, count = get_posts(root_url, reddit_read_only, subreddit_names)
-
-# Save the posts to a CSV file
-save_posts(posts_list, option="json")
-
-	
 
 
