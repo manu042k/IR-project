@@ -136,7 +136,6 @@ def _process_subreddit_threaded(root_url, reddit_read_only, subreddit_name, cate
             with time_lock:
                 time_stamp[len(posts_list)] = time.time() - time_start
         
-        print(time_stamp)
         return subreddit_post_count
     
     except Exception as e:
@@ -213,6 +212,7 @@ def _get_post_listings(subreddit):
         subreddit.new(limit=None),
         subreddit.rising(limit=None),
         subreddit.controversial(limit=None),
+
     ]
 
 
