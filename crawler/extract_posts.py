@@ -1,6 +1,6 @@
 from utils.get_subreddit import get_info
 import time
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt # type: ignore
 import concurrent.futures
 import threading
 
