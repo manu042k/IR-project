@@ -161,3 +161,10 @@ The project generates a graph (`scraping_time.png`) that shows the time taken to
 - Very large datasets might require additional memory management
 - Private subreddits or quarantined content might not be accessible
 
+## Team Members
+
+- [Manoj Manjunatha](https://github.com/manu042k)
+- [Vijay Ram Enaganti](https://github.com/VjayRam)
+- [Sanjay Srinivasa](https://github.com/Sanjay1S)
+- [Sumukh Balu Somalaram](https://github.com/sumukhbalu84)
+- [Lakhan Kumar Sunil Kumar](https://github.com/1629lyk)
