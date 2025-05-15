@@ -97,14 +97,6 @@ def index_documents_in_es(es, index_name, documents):
 if __name__ == "__main__":
     os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"  # Prevent duplicate library errors
 
-    # **Argument Parser for Command-Line Input**
-    parser = argparse.ArgumentParser(description="Process a .jl file and index it in Elasticsearch.")
-    parser.add_argument("source_file", type=str, nargs="?", default="output.jl",
-                        help="Path to the .jl file (default: output.jl)")
-
-    args = parser.parse_args()
-    SOURCE_FILE = args.source_file
-
     print("\n📌 Step 1: Loading JSON data")
     data = load_data(DATA_FILE)
 
