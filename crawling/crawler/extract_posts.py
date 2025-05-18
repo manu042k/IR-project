@@ -3,6 +3,7 @@ import time
 import matplotlib.pyplot as plt # type: ignore
 import concurrent.futures
 import threading
+from datetime import datetime, timezone
 
 
 def get_posts(root_url, reddit_read_only, subreddit_names, max_workers=5):
@@ -122,9 +123,12 @@ def _process_subreddit_threaded(root_url, reddit_read_only, subreddit_name, cate
                     "Score": post.score,
                     "Total Comments": post.num_comments,
                     "Post URL": post.url,
-                    "Sports category": category,
+                    "Sports category": category, 
+                    "Upvote Ratio": post.upvote_ratio,
+                    "Awards": post.total_awards_received,
+                    "time": datetime.fromtimestamp(post.created_utc, tz=timezone.utc).strftime('%Y-%m-%d %H:%M:%S'),
                 }
-                
+                print(post_obj)
                 posts_from_subreddit.append(post_obj)
                 subreddit_post_count += 1
                 
