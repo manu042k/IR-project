@@ -126,9 +126,9 @@ def _process_subreddit_threaded(root_url, reddit_read_only, subreddit_name, cate
                     "Sports category": category, 
                     "Upvote Ratio": post.upvote_ratio,
                     "Awards": post.total_awards_received,
-                    "time": datetime.fromtimestamp(post.created_utc, tz=timezone.utc).strftime('%Y-%m-%d %H:%M:%S'),
+                    "Time": datetime.fromtimestamp(post.created_utc, tz=timezone.utc).strftime('%Y-%m-%d %H:%M:%S'),
                 }
-                print(post_obj)
+                # print(post_obj)
                 posts_from_subreddit.append(post_obj)
                 subreddit_post_count += 1
                 
