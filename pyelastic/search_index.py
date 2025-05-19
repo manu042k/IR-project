@@ -5,9 +5,14 @@ import json
 from urllib.parse import quote_plus
 np.float_ = np.float64
 from elasticsearch import Elasticsearch
+import os
 
 # Connect to Elasticsearch
-es = Elasticsearch("http://localhost:9200")
+
+# Get Elasticsearch URL from environment variable
+ELASTICSEARCH_URL = os.getenv("ELASTICSEARCH_URL", "http://localhost:9200")
+
+es = Elasticsearch(ELASTICSEARCH_URL)
 
 # Function to calculate a PageRank-inspired score
 def calculate_pagerank_score(posts, damping_factor=0.85):
@@ -87,13 +92,13 @@ def calculate_pagerank_score(posts, damping_factor=0.85):
     return scores
 
 # Function to search documents
-def search_documents(index_name, query, count=10, sort_method="relevance", weight_relevance=1.0, weight_score=1.0, weight_time=1.0, use_pagerank=False):
+def search_documents(query, index_name = os.getenv("ES_INDEX_NAME", "reddit_sports_data"), count=10, sort_method="relevance", weight_relevance=1.0, weight_score=1.0, weight_time=1.0, use_pagerank=False):
     """
     Search documents with flexible ranking options.
     
     Parameters:
-    - index_name: The Elasticsearch index name
     - query: Search query string
+    - index_name: The Elasticsearch index name
     - count: Number of results to return
     - sort_method: Ranking method ('relevance', 'score', 'time', 'combined')
     - weight_relevance: Weight for relevance score when using 'combined' method
@@ -118,7 +123,7 @@ def search_documents(index_name, query, count=10, sort_method="relevance", weigh
         
     elif sort_method == "time":
         # Sort by post time (most recent first)
-        search_query["sort"] = [{"metadata.time": {"order": "desc"}}]
+        search_query["sort"] = [{"metadata.time": {"order": "asc"}}]
         
     elif sort_method == "combined":
         # Use function_score to create a custom ranking
@@ -183,26 +188,22 @@ def search_documents(index_name, query, count=10, sort_method="relevance", weigh
         for hit in results:
             val = hit['_source']
             metadata = val.get('metadata', {})
-            
-            # Basic information
-            print(f"ID: {hit['_id']} | Elasticsearch Score: {hit['_score']}")
-            print(f"Title: {metadata.get('title', 'N/A')}")
-            print(f"Subreddit: {metadata.get('subreddit', 'N/A')} | Sport: {metadata.get('sport', 'N/A')}")
-            # Print all metadata fields
-            for key, value in metadata.items():
-                print(f"{key.replace('_', ' ').capitalize()}: {value}")
-            # Ranking factors
-            print(f"Reddit Score: {metadata.get('score', 0)} | Comments: {metadata.get('num_comments', 0)}")
-            print(f"Time: {metadata.get('time', 'N/A')}")
-            
-            # If using PageRank, show that score
+            # Extract metadata fields
+            hit_details = {
+                'id': hit['_id'],
+                'elasticsearch_score': hit['_score'],
+                # Add all metadata fields (title, subreddit, score, comments, time, etc.)
+                **metadata
+            }
+
+            # Add PageRank score if applicable
             if use_pagerank:
-                pr_score = pagerank_scores.get(hit.get('_id', ''), 0)
-                print(f"PageRank Score: {pr_score:.6f}")
-                
-            print(f"Post URL: {metadata.get('post_url', 'N/A')}\n")
+                # pagerank_scores dictionary is computed if use_pagerank is True
+                hit_details['pagerank_score'] = pagerank_scores.get(hit.get('_id', ''), 0.0)
+            else:
+                hit_details['pagerank_score'] = None  # Set to None if PageRank was not used
             
-            data.append(val)
+            data.append(hit_details)
     else:
         print(f"No results found for '{query}'.")
         
@@ -284,16 +285,18 @@ if __name__ == "__main__":
                 print("PageRank-inspired ranking will be applied to the search results.")
             
             # Execute search with selected parameters
-            search_documents(
+            data = search_documents(
+                query,
                 index_name, 
-                query, 
                 count, 
                 sort_method, 
                 weight_relevance, 
                 weight_score, 
                 weight_time,
                 use_pagerank
-            )
+            ) 
+            print(f"\n{len(data)} documents returned.")
+            print("Data:", json.dumps(data, indent=2))
                 
         except ValueError:
             print("Please enter valid numeric values.")

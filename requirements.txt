@@ -4,4 +4,6 @@ pandas
 python-dotenv
 matplotlib
 elasticsearch==7.10.1
-elastic-transport==8.17.0
+elastic-transport==8.17.0 
+fastapi
+uvicorn
