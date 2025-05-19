@@ -35,7 +35,10 @@ def prepare_data(data):
             "score": obj["Score"],
             "num_comments": obj["Total Comments"],
             "post_url": obj["Post URL"],
-            "sport": obj["Sports category"]
+            "sport": obj["Sports category"],
+            "upvote_ratio": obj.get("Upvote Ratio", 0),
+            "awards": obj.get("Awards", 0),
+            "time": obj.get("Time", "")
         }
         documents.append({"text": text_data, "metadata": metadata})
 
@@ -59,7 +62,10 @@ def create_es_index(es, index_name):
                         "score": {"type": "integer"},
                         "num_comments": {"type": "integer"},
                         "post_url": {"type": "text"},
-                        "sport": {"type": "text"}
+                        "sport": {"type": "text"},
+                        "upvote_ratio": {"type": "float"},
+                        "awards": {"type": "integer"},
+                        "time": {"type": "date", "format": "yyyy-MM-dd HH:mm:ss||strict_date_optional_time"}
                     }
                 },
             }
