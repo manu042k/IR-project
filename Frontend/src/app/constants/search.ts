@@ -2,6 +2,7 @@ export enum SortMethod {
   RELEVANCE = 'relevance',
   SCORE = 'score',
   TIME = 'time',
+  COMBINED = 'combined',
 }
 
 export interface SearchParams {

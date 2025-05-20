@@ -30,6 +30,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { SliderModule } from 'primeng/slider';
 import { OverlayPanelModule } from 'primeng/overlaypanel';
 import { TooltipModule } from 'primeng/tooltip';
+import { BadgeModule } from 'primeng/badge';
 
 @Component({
   selector: 'app-input-container',
@@ -50,6 +51,7 @@ import { TooltipModule } from 'primeng/tooltip';
     InputTextModule,
     SliderModule,
     TooltipModule,
+    BadgeModule,
   ],
   providers: [MessageService],
   templateUrl: './input-container.component.html',
@@ -63,11 +65,12 @@ export class InputContainerComponent implements OnInit {
   public searchResults: SearchResultItem[] = [];
   public isLoading = false;
   public sortOptions = [
+    { label: 'Combined', value: SortMethod.COMBINED },
     { label: 'Relevance', value: SortMethod.RELEVANCE },
     { label: 'Score', value: SortMethod.SCORE },
     { label: 'Time', value: SortMethod.TIME },
   ];
-  public selectedSortMethod = SortMethod.RELEVANCE;
+  public selectedSortMethod = SortMethod.COMBINED;
   public usePageRank = true;
   public count = 10;
   public weightRelevance = 1;

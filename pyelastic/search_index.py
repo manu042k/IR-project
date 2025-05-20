@@ -123,7 +123,7 @@ def search_documents(query, index_name = os.getenv("ES_INDEX_NAME", "reddit_spor
         
     elif sort_method == "time":
         # Sort by post time (most recent first)
-        search_query["sort"] = [{"metadata.time": {"order": "asc"}}]
+        search_query["sort"] = [{"metadata.time": {"order": "desc"}}]
         
     elif sort_method == "combined":
         # Use function_score to create a custom ranking
@@ -168,7 +168,7 @@ def search_documents(query, index_name = os.getenv("ES_INDEX_NAME", "reddit_spor
     # Process search results
     if response['hits']['hits']:
         results = response['hits']['hits']
-        
+    
         # Apply PageRank-inspired ranking if requested
         if use_pagerank:
             # Calculate pagerank scores
@@ -195,7 +195,7 @@ def search_documents(query, index_name = os.getenv("ES_INDEX_NAME", "reddit_spor
                 # Add all metadata fields (title, subreddit, score, comments, time, etc.)
                 **metadata
             }
-
+            print(f"ID: {hit['_id']}, Score: {hit['_score']}")
             # Add PageRank score if applicable
             if use_pagerank:
                 # pagerank_scores dictionary is computed if use_pagerank is True
