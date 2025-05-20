@@ -1,0 +1,19 @@
+<ng-container *ngIf="{} as cmpObj" class="h-screen">
+  <p-menubar [model]="items">
+    <ng-template #start>
+      <app-logo></app-logo>
+      <span class="ml-3 text-xl font-bold text-white-800">Reddit Scraper</span>
+    </ng-template>
+
+    <ng-template #end>
+      <div class="flex items-center gap-2">
+        <p-button [outlined]="true" severity="secondary" (click)="showDialog()">
+          <i class="pi pi-spin pi-cog" style="font-size: 0.9rem"></i>
+        </p-button>
+      </div>
+    </ng-template>
+  </p-menubar>
+  <app-input-container></app-input-container>
+  <app-system-settings></app-system-settings>
+</ng-container>
+<p-toast />

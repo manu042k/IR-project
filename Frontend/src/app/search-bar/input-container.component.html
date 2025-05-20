@@ -1,0 +1,39 @@
+<div class="relative w-full p-4">
+  <div class="input-container">
+    <!-- Top Section with Textarea -->
+    <div class="flex-1 p-3">
+      <textarea
+        #messageInput
+        [(ngModel)]="userInput"
+        (input)="onInput()"
+        (keydown)="onKeyDown($event)"
+        rows="1"
+        placeholder="Ask anything..."
+      ></textarea>
+    </div>
+
+    <!-- Bottom Section with Buttons -->
+    <div class="bottom-section">
+      <!-- Left side -->
+      <div class="flex items-center gap-2">
+        <button class="language-button">
+          <i class="pi pi-language text-lg"></i>
+          <span>Auto</span>
+          <i class="pi pi-chevron-down text-sm"></i>
+        </button>
+        <button class="action-button">
+          <i class="pi pi-spin pi-globe text-lg"></i>
+        </button>
+      </div>
+
+      <!-- Right side -->
+      <button
+        (click)="onSendMessage()"
+        [disabled]="!userInput.trim()"
+        class="action-button"
+      >
+        <i class="pi pi-send text-lg"></i>
+      </button>
+    </div>
+  </div>
+</div>
