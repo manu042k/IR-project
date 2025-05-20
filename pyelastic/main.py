@@ -41,7 +41,7 @@ async def trigger_indexer():
         return {"status": "error", "message": f"Indexing failed: {error_message}"}
 
 @app.delete("/clear-index")
-async def clear_index(index_name: str = "reddit_sports_data"):
+async def clear_index():
     """
     API endpoint to clear the specified Elasticsearch index.
     
@@ -52,8 +52,8 @@ async def clear_index(index_name: str = "reddit_sports_data"):
         A JSON response indicating success or failure.
     """
     try:
-        clear_elasticsearch_index(index_name)
-        return {"status": "success", "message": f"Index '{index_name}' has been cleared"}
+        clear_elasticsearch_index()
+        return {"status": "success", "message": f"Indexes have been cleared"}
     except Exception as e:
         return {"status": "error", "message": str(e)}
 

@@ -13,7 +13,6 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { providePrimeNG } from 'primeng/config';
 import { MyPreset } from 'src/mytheme';
 import { provideHttpClient, withInterceptors } from '@angular/common/http';
-import { BASE_API_URL, configFactory } from './environment';
 import { errorHandlerInterceptor } from './interceptors/error-handler.interceptor';
 import { MessageService } from 'primeng/api';
 
@@ -29,10 +28,6 @@ export const appConfig: ApplicationConfig = {
         preset: MyPreset,
       },
     }),
-    {
-      provide: BASE_API_URL,
-      useFactory: configFactory, // Dynamically determine the URL
-    },
     MessageService,
   ],
 };

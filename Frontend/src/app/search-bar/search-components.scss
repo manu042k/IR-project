@@ -1,0 +1,77 @@
+// PrimeNG Component Styling for Dark Theme
+:host ::ng-deep {
+  // Dropdown styling
+  .p-dropdown {
+    background-color: #2D2D2D;
+    border-color: #374151;
+    color: #d1d5db;
+
+    .p-dropdown-label {
+      color: #d1d5db;
+    }
+  }
+
+  // Card styling
+  .p-card {
+    background-color: #262626;
+    border: 1px solid #374151;
+    border-radius: 0.5rem;
+
+    .p-card-content {
+      padding: 0;
+    }
+  }
+
+  // Button styling
+  .p-button-text {
+    color: #9ca3af;
+
+    &:hover {
+      color: #0ea5e9;
+      background-color: rgba(14, 165, 233, 0.1);
+    }
+  }
+
+  // Overlay panel
+  .p-overlaypanel {
+    background-color: #262626;
+    border-color: #374151;
+
+    .p-overlaypanel-content {
+      padding: 0;
+    }
+  }
+
+  // Input range styling
+  input[type="range"] {
+    background-color: #4b5563;
+    
+    &::-webkit-slider-thumb {
+      background-color: #0ea5e9;
+    }
+  }
+
+  // Toggle switch
+  .p-inputswitch {
+    &.p-inputswitch-checked {
+      .p-inputswitch-slider {
+        background-color: #0ea5e9;
+      }
+    }
+  }
+
+  // Toast styling
+  .p-toast {
+    .p-toast-message {
+      &.p-toast-message-success {
+        background-color: rgba(16, 185, 129, 0.1);
+        border-color: #10b981;
+      }
+      
+      &.p-toast-message-error {
+        background-color: rgba(239, 68, 68, 0.1);
+        border-color: #ef4444;
+      }
+    }
+  }
+}
