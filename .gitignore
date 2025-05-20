@@ -1,4 +1,4 @@
-env/*
-*.json
-*.csv
-*.pyc
+env/
+posts.json
+posts.csv
+.DS_Store

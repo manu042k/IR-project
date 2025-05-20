@@ -1,0 +1,65 @@
+
+/* Base component styling */
+:host ::ng-deep {
+  /* Custom scrollbar */
+  .scrollbar-custom::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background-color: #4b5563;
+    border-radius: 9999px;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    background-color: #6b7280;
+  }
+  
+  /* PrimeNG customizations */
+  .p-card {
+    background-color: #262626;
+    border: 1px solid #374151;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .p-card .p-card-content {
+    padding: 0;
+  }
+  
+  .p-dropdown {
+    background-color: #2D2D2D;
+    border-color: #374151;
+  }
+  
+  .p-dropdown .p-dropdown-label {
+    color: #d1d5db;
+  }
+  
+  .p-overlaypanel {
+    background-color: #262626;
+    border-color: #374151;
+  }
+  
+  .p-overlaypanel .p-overlaypanel-content {
+    padding: 0;
+  }
+  
+  .p-inputswitch.p-inputswitch-checked .p-inputswitch-slider {
+    background-color: #0ea5e9;
+  }
+  
+  .p-toast-message-success {
+    background-color: rgba(16, 185, 129, 0.1);
+    border-color: #10b981;
+  }
+  
+  .p-toast-message-error {
+    background-color: rgba(239, 68, 68, 0.1);
+    border-color: #ef4444;
+  }
+}
