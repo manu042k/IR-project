@@ -2,3 +2,4 @@ env/
 posts.json
 posts.csv
 .DS_Store
+*.pyc
