@@ -1,5 +1,5 @@
 env/
-posts.json
+*.json
 posts.csv
 .DS_Store
 *.pyc
