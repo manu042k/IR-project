@@ -14,7 +14,7 @@ The `Frontend` directory contains the user interface and client-side logic for t
 
 ## Setup Instructions
 
-1. **Install Dependencies**: Run `npm install` in this directory to install all dependencies.
+1. **Install Dependencies**: Run `npm install --legacy-peer-deps` in this directory to install all dependencies.
 2. **Configuration**: Ensure configuration files like `tsconfig.json` and `tailwind.config.js` are set up for your environment. Adjust `vercel.json` for deployment if needed.
 
 ## Running the Application
