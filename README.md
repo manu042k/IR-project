@@ -32,16 +32,16 @@ This project is designed to extract posts from various subreddits categorized by
 ├── requirements.txt           # Project dependencies
 ├── seed.txt                   # List of subreddits to crawl
 ├── scraping_time.png          # Performance visualization (generated)
-└── Readme.md                  # This documentation
+└── README.md                  # This documentation
 ```
 
 ## Prerequisites
 
 - Python 3.6 or higher
 - Reddit API credentials (client ID, client secret)
-- Required Python packages (see requirements.txt)
+- Required Python packages (see `requirements.txt`)
 
-## Installation
+## Getting Started
 
 1. **Clone the repository**
 
@@ -65,17 +65,17 @@ pip install -r requirements.txt
 
 4. **Set up Reddit API credentials**
 
-You need to register an application on Reddit to get API credentials:
+Register an application on Reddit to get API credentials:
 
 - Go to https://www.reddit.com/prefs/apps
-- Click "create app" button at the bottom
+- Click "create app" at the bottom
 - Fill in the required information
 - Select "script" for the type of app
 
 Once you have your credentials, you can either:
 
 - Update them directly in `crawler/init_crawler.py`
-- Create a `.env` file in the root directory with the following content:
+- Or create a `.env` file in the root directory with:
   ```
   REDDIT_CLIENT_ID=your_client_id
   REDDIT_CLIENT_SECRET=your_client_secret
@@ -100,27 +100,26 @@ The project can be configured using environment variables or the `.env` file:
 python main.py
 ```
 
-Alternatively, you can use the provided shell script which automates the setup process:
+Alternatively, use the provided shell script to automate setup:
 
 ```bash
 chmod +x crawler.sh
 ./crawler.sh
 ```
 
-The crawler.sh script performs the following actions:
+The `crawler.sh` script:
 
-- Checks if the virtual environment exists, and creates one if it doesn't
+- Checks for the virtual environment and creates one if needed
 - Activates the virtual environment
-- Installs dependencies from requirements.txt
-- Runs main.py with 8 worker threads (MAX_WORKERS=8)
+- Installs dependencies from `requirements.txt`
+- Runs `main.py` with 8 worker threads (`MAX_WORKERS=8`)
 
-This is the recommended method for first-time users as it handles all the setup automatically.
+This is the recommended method for first-time users as it handles all setup automatically.
 
 2. **Check the output**
 
-The results will be saved as `posts.json` or `posts.csv` depending on your configuration.
-
-A performance graph will also be generated as `scraping_time.png` showing the time taken to scrape posts.
+Results will be saved as `posts.json` or `posts.csv` depending on your configuration.
+A performance graph will be generated as `scraping_time.png` showing the time taken to scrape posts.
 
 ## Seed File Format
 
@@ -168,3 +167,5 @@ The project generates a graph (`scraping_time.png`) that shows the time taken to
 - [Sanjay Srinivasa](https://github.com/Sanjay1S)
 - [Sumukh Balu Somalaram](https://github.com/sumukhbalu84)
 - [Lakhan Kumar Sunil Kumar](https://github.com/1629lyk)
+
+

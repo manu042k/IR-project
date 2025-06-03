@@ -1,43 +1,58 @@
 # Frontend
 
-The `Frontend` directory houses the user interface and client-side logic for the VisionXAI project. This application is designed to provide an intuitive and responsive user experience, leveraging modern web technologies and frameworks.
+The `Frontend` directory contains the user interface and client-side logic for the VisionXAI project. This Angular application is managed with Nx and is designed for a responsive, modern user experience.
 
 ## Key Features
 
-- **Responsive Design**: The application is built with a mobile-first approach, ensuring a seamless experience across devices of all sizes.
-
-- **Dynamic User Interface**: Utilizes Angular components to create a dynamic and interactive user interface, allowing users to engage with the application efficiently.
-
-- **Server-Side Rendering (SSR)**: Implements server-side rendering to improve performance and SEO, providing faster load times and better accessibility for search engines.
-
-- **Theming and Customization**: Offers a customizable theme system, allowing users to personalize the look and feel of the application through `mytheme-2.ts`.
-
-- **State Management**: Efficient state management using Angular's built-in services and state management libraries, ensuring consistent data flow and application state.
-
-- **API Integration**: Seamlessly integrates with backend services to fetch and display data, using RESTful APIs for communication.
-
-- **Testing and Quality Assurance**: Comprehensive testing setup using Jest, ensuring high code quality and reliability through unit and integration tests.
+- **Responsive Design**: Built with a mobile-first approach using Angular and Tailwind CSS for seamless experiences across devices.
+- **Dynamic User Interface**: Uses Angular components and modules for a dynamic, interactive UI.
+- **Server-Side Rendering (SSR)**: SSR is supported via Angular Universal for improved performance and SEO. See `main.server.ts` and `server.ts` for implementation.
+- **Theming and Customization**: Customizable themes are managed in `mytheme.ts`.
+- **State Management**: Utilizes Angular's built-in services for state management. (No third-party state library is used by default.)
+- **API Integration**: Integrates with backend services using Angular's HTTP client for RESTful API communication.
+- **Testing and Quality Assurance**: Configured with Jest for unit and integration tests. See `jest.config.ts` and `test-setup.ts`.
 
 ## Setup Instructions
 
-1. **Install Dependencies**: Run `npm install` to install all necessary dependencies.
-
-2. **Configuration**: Ensure that all configuration files (e.g., `tsconfig.json`, `tailwind.config.js`) are correctly set up for your environment.
+1. **Install Dependencies**: Run `npm install` in this directory to install all dependencies.
+2. **Configuration**: Ensure configuration files like `tsconfig.json` and `tailwind.config.js` are set up for your environment. Adjust `vercel.json` for deployment if needed.
 
 ## Running the Application
 
-- **Development Server**: Use `npx nx serve Frontend` to start the development server, which supports hot-reloading for rapid development.
+- **Development Server**: Start the dev server with:
 
-- **Production Build**: Use `npx nx build Frontend` to create a production-ready build, optimized for performance and scalability.
+  ```sh
+  npx nx serve Frontend
+  ```
+
+  This enables hot-reloading for rapid development.
+
+- **Production Build**: Create a production build with:
+  ```sh
+  npx nx build Frontend
+  ```
+  The output will be optimized for deployment.
 
 ## Testing
 
-- Run tests using the command `npx nx test Frontend`. The testing framework is configured to provide detailed reports and coverage analysis.
+Run all tests with:
+
+```sh
+npx nx test Frontend
+```
+
+Jest is configured to provide detailed reports and coverage analysis.
 
 ## Build and Deployment
 
-- The build process is managed by Nx, ensuring efficient compilation and bundling of the application.
-- Deployment configurations can be managed in `vercel.json` or other deployment-specific files, allowing for easy deployment to platforms like Vercel.
+- The build process is managed by Nx for efficient compilation and bundling.
+- Deployment can be configured in `vercel.json` or other deployment-specific files for platforms like Vercel.
+
+## Project Structure
+
+- `src/` — Main source code (Angular app, entry points, styles, theme)
+- `public/` — Static assets
+- `app/` — Angular components, services, routes, and shared modules
 
 ## Additional Resources
 
