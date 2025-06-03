@@ -21,4 +21,4 @@ def clear_elasticsearch_index(index_to_delete="reddit_sports_data"):
 if __name__ == "__main__":
     
     index_name = "reddit_sports_data"
-    clear_elasticsearch_index(es, index_name)
+    clear_elasticsearch_index(index_name)
