@@ -99,7 +99,7 @@ def search_documents(query, index_name = os.getenv("ES_INDEX_NAME", "reddit_spor
     Parameters:
     - query: Search query string
     - index_name: The Elasticsearch index name
-    - count: Number of results to return
+    - count: Number of results to request from Elasticsearch. The final unique count may be lower.
     - sort_method: Ranking method ('relevance', 'score', 'time', 'combined')
     - weight_relevance: Weight for relevance score when using 'combined' method
     - weight_score: Weight for vote score when using 'combined' method
@@ -113,7 +113,7 @@ def search_documents(query, index_name = os.getenv("ES_INDEX_NAME", "reddit_spor
                 "query": query  # General query for full-text search across all fields
             }
         },
-        "size": count
+        "size": count # Request 'count' documents from Elasticsearch
     }
     
     # Apply sorting based on method
@@ -167,41 +167,72 @@ def search_documents(query, index_name = os.getenv("ES_INDEX_NAME", "reddit_spor
     data = []
     # Process search results
     if response['hits']['hits']:
-        results = response['hits']['hits']
+        all_hits = response['hits']['hits'] # All hits from Elasticsearch
     
-        # Apply PageRank-inspired ranking if requested
-        if use_pagerank:
-            # Calculate pagerank scores
-            pagerank_scores = calculate_pagerank_score(results)
+        # --- Start: Filter for unique Reddit posts ---
+        unique_hits_list = []
+        seen_identifiers = set() # To store unique identifiers
+
+        for hit in all_hits:
+            hit_metadata = hit.get('_source', {}).get('metadata', {})
+            
+            # Determine the unique identifier for the Reddit post.
+            # Priority: 
+            # 1. Reddit URL from metadata.get('url')
+            # 2. Reddit post ID from metadata.get('id') (assuming 'id' key in metadata stores the Reddit post ID)
+            #    Adjust 'id' if your Reddit post ID is stored under a different key (e.g., 'post_id', 'name').
+            # 3. Elasticsearch document ID hit.get('_id') as a fallback.
+            post_identifier = hit_metadata.get('url')
+            
+            if not post_identifier: # If URL is None or empty string
+                post_identifier = hit_metadata.get('id') 
+            
+            if not post_identifier: # If both URL and presumed Reddit ID are None or empty
+                post_identifier = hit.get('_id') # Fallback to Elasticsearch document ID
+
+            # Add to list if identifier is valid and not seen before
+            if post_identifier is not None and post_identifier not in seen_identifiers:
+                seen_identifiers.add(post_identifier)
+                unique_hits_list.append(hit)
+        # --- End: Filter for unique Reddit posts ---
+        
+        results = unique_hits_list # Use the filtered list of unique hits for further processing
+
+        pagerank_scores = {} # Initialize in case PageRank is not used or results are empty
+        if use_pagerank and results: # Check if results is not empty before calculating PageRank
+            pagerank_scores = calculate_pagerank_score(results) # Pass unique results
             
             # Re-sort results based on PageRank scores
-            results.sort(key=lambda hit: pagerank_scores.get(hit.get('_id', ''), 0), reverse=True)
+            results.sort(key=lambda hit_item: pagerank_scores.get(hit_item.get('_id', ''), 0), reverse=True)
             
             ranking_method = f"{sort_method} with PageRank re-ranking"
         else:
             ranking_method = sort_method
         
-        print(f"\nFound {len(results)} results for '{query}':\n")
+        # The number of 'results' might be less than 'count' if duplicates were removed.
+        print(f"\nFound {len(results)} unique results for '{query}':\n")
         print(f"Ranking method: {ranking_method}\n")
         
         # Display results
-        for hit in results:
+        for hit in results: # Iterate over unique results
             val = hit['_source']
-            metadata = val.get('metadata', {})
-            # Extract metadata fields
+            # Use a different variable name for metadata inside this loop to avoid confusion
+            # with the 'hit_metadata' variable used earlier for uniqueness check.
+            current_hit_metadata = val.get('metadata', {}) 
+            
             hit_details = {
-                'id': hit['_id'],
+                'id': hit['_id'], # Elasticsearch document ID
                 'elasticsearch_score': hit['_score'],
-                # Add all metadata fields (title, subreddit, score, comments, time, etc.)
-                **metadata
+                **current_hit_metadata # Add all fields from metadata
             }
-            print(f"ID: {hit['_id']}, Score: {hit['_score']}")
+            
             # Add PageRank score if applicable
-            if use_pagerank:
-                # pagerank_scores dictionary is computed if use_pagerank is True
+            if use_pagerank and results: 
                 hit_details['pagerank_score'] = pagerank_scores.get(hit.get('_id', ''), 0.0)
             else:
-                hit_details['pagerank_score'] = None  # Set to None if PageRank was not used
+                hit_details['pagerank_score'] = None
+            
+            print(f"ID: {hit['_id']}, Score: {hit['_score']}") # Original print statement
             
             data.append(hit_details)
     else:

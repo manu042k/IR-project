@@ -42,7 +42,7 @@ if [ $? -ne 0 ]; then
 fi
 
 # Run main.py in pyelastic in the background
-(cd pyelastic && source ../env/bin/activate && python main.py) &
+(cd pyelastic && source ../env/bin/activate && python3 main.py) &
 MAIN_PID=$!
 
 # Install npm dependencies for Frontend
@@ -59,6 +59,6 @@ FRONTEND_PID=$!
 cd ..
 
 # Wait a few seconds for the server to start, then open the app in the browser
-sleep 5
+sleep 10
 open http://localhost:4200
 
